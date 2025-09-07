@@ -76,3 +76,6 @@ function triggerDance(gift) {
 
 // Jalankan
 fetchGifts();
+fetch('/.netlify/functions/gifts')
+  .then(res => res.json())
+  .then(gifts => console.log(gifts));
